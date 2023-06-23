@@ -1,0 +1,263 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex:1;
+    padding-bottom: 50px;
+    background-color:#F5F5F5;
+}
+
+/* style for nav bar */
+
+.header {
+    background-color: black;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 6%;
+    transition: all .50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color:#29fd53;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+   color: #fff;
+   font-size: 1.2rem;
+}
+
+#head {
+    color:#29fd53;
+}
+
+.nbar {
+    display: flex;
+}
+
+#compose {
+    margin: 10px;
+    font-size: 0.8rem;
+    background-color: #29fd53;
+    border-radius: 10px;
+}
+#compose:hover {
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.nbar a {
+    color: #fff;
+    padding: 5px 10px;
+}
+.nbar a:hover {
+    color: #29fd53;
+    transition: all 0.5s ease;
+}
+
+.nbar a.active{
+    color: #29fd53;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.main a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+}
+
+#user i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.main a:hover {
+    color: #29fd53;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 30px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+@media (max-width:1280px){
+    .header {
+         padding:3px 2%;
+    }
+}
+
+@media (max-width:1090px){
+    #menu-icon {
+        display: block;
+        transition: all 0.5s ease;
+    }
+
+    .nbar {
+        position: absolute;
+        top:100%;
+        right:0;
+        background-color: black;
+        width: 200px;
+        height: 30vh;
+        display: none;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 10px;
+        border-radius:0 0 10px 10px;
+        transition: all .50s ease;
+        
+    }
+    
+    .nav-open {
+        display: flex;
+    }
+}
+
+/* style for footer */
+.footer{
+    position: relative;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    word-spacing: 3px;
+   
+}
+
+/* style for main */
+
+h1 {
+    padding: 8px 6%;
+}
+/* style for compose */
+
+.compoose{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8px 6%;
+    margin-top: 2.5%;
+}
+
+label {
+     font-size: 1.2rem;
+     font-weight: bold;
+}
+
+form  .formElement {
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+
+#titleText {
+    width: 100%;
+    border: 0.1px solid  black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#blogText {
+    width: 100%;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#publishButton{
+    margin-top: 10px;
+    font-size: 1.2rem ;
+    font-family: 'Poppins', sans-serif;
+    background-color: #29fd53;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+}
+/* style for  container */
+.paraContainer{
+    font-size: 1.2rem;
+    padding: 8px 6%;
+}
+
+/* universal clasees */
+.para {
+    word-spacing: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bold {
+     font-weight: 800;
+}
+
+.blogBox{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* style for contact us */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    align-items: center;
+}
+
+.social a{
+    color: black;
+    margin:5px;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+
+
+
+

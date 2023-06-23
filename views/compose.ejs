@@ -1,0 +1,18 @@
+<%-include ("header")-%>
+
+<div class="container">
+<div class="compose">
+    <h1>Compose New Blog</h1>
+    <div class="composeForm">
+        <form action="/compose" method="post">
+            <span class="formElement"><label for="titleText">Title of blog:</label></span>
+            <span class="formElement"></span><input name="blogTitle" type="text" id="titleText"></span>
+            <span class="formElement"></span><label for="blogText">Content of the blog:</label></span>
+            <span class="formElement"></span><textarea name="blogContent" id="blogText" rows="15" ></textarea></span>
+            <span class="formElement"></span><button id="publishButton" type="submit" name="postButton">Publish</button></span>
+        </form>
+    </div>
+  </div>
+</div>
+
+<%-include ("footer")-%>

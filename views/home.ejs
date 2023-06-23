@@ -1,0 +1,12 @@
+<%-include ("header")-%>
+<div class="container">
+    <h1>Home</h1>
+      <% for(let i = 0; i<blogPosts.length; i++){ %>
+        <div class="paraContainer blogBox">
+         <h2 class="title"><%=blogPosts[i].title%></h2>
+         <p class="para"><%= blogPosts[i].newBlogContent.substring(0,100)+"..."%><a href="/posts/<%=blogPosts[i].title%>">Read more</a></p> 
+        </div>
+      <%}%>
+  </div>
+
+  <%-include ("footer")-%>

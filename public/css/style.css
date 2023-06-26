@@ -257,6 +257,14 @@ form  .formElement {
     font-size: 3rem;
 }
 
+.delete{
+    background-color:red;
+    border: none;
+    border-radius: 10px;
+    padding: 4.5px 10px;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+}    
 
 
 

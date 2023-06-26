@@ -5,8 +5,8 @@
         <form action="/delete" method="post">
         <div class="paraContainer blogBox">
          <h2 class="title"><%=blogPosts[i].blog_title%></h2>
-         <p class="para"><%= blogPosts[i].blog_content.substring(0,100)+"..."%><a href="/posts/<%=blogPosts[i].blog_title%>">Read more</a></p>
-         <button name="delete" value="<%=blogPosts[i].blog_title%>">Delete</button>
+         <p class="para"><%= blogPosts[i].blog_content.substring(0,100)+"..."%><a href="/posts/<%=blogPosts[i].blog_title%>">Read More</a></p>
+         <button class="delete" name="delete" value="<%=blogPosts[i].blog_title%>">Delete</button>
         </div>
         </form>
       <%}%>

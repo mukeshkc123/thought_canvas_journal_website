@@ -2,10 +2,13 @@
 <div class="container">
     <h1>Home</h1>
       <% for(let i = 0; i<blogPosts.length; i++){ %>
+        <form action="/delete" method="post">
         <div class="paraContainer blogBox">
-         <h2 class="title"><%=blogPosts[i].title%></h2>
-         <p class="para"><%= blogPosts[i].newBlogContent.substring(0,100)+"..."%><a href="/posts/<%=blogPosts[i].title%>">Read more</a></p> 
+         <h2 class="title"><%=blogPosts[i].blog_title%></h2>
+         <p class="para"><%= blogPosts[i].blog_content.substring(0,100)+"..."%><a href="/posts/<%=blogPosts[i].blog_title%>">Read more</a></p>
+         <button name="delete" value="<%=blogPosts[i].blog_title%>">Delete</button>
         </div>
+        </form>
       <%}%>
   </div>
 
